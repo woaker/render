@@ -1,5 +1,5 @@
 # 使用 Ubuntu 22.04 作为基础镜像
-FROM ubuntu:22.04
+FROM ubuntu:latest
 
 # 安装 Shellinabox
 RUN apt-get update && \
@@ -8,7 +8,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # 设置 root 用户的密码为 'root'
-RUN echo 'root:frepai' | chpasswd
+RUN echo 'root:xyj@86512175' | chpasswd
 
 # 暴露 22 端口
 EXPOSE 22
